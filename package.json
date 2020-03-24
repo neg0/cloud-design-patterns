@@ -1,0 +1,20 @@
+{
+  "name": "cloud-design-patterns",
+  "version": "1.0.0",
+  "description": "Cloud Design Patterns using Node and TypeScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neg0/cloud-design-patterns.git"
+  },
+  "main": "src/app.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc /dist"
+  },
+  "author": "Hadi Tajallaei",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.0.2",
+    "typescript": "^3.8.3"
+  }
+}
