@@ -1,6 +1,5 @@
-import CircuitBreakerStateStore, {
-    CircuitBreakerState,
-} from './CircuitBreakerStateStore'
+import CircuitBreakerStateStore from './CircuitBreakerStateStore'
+import { CircuitBreakerState } from './CircuitBreakerState'
 
 export default class CircuitBreakerStateStoreService
     implements CircuitBreakerStateStore {
