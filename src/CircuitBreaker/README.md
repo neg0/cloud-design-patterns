@@ -7,7 +7,7 @@ that aren't glitches.
 
 
 #### Further Readings:
-* [Azure Circuit Breaker pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)
+* [Azure Circuit Breaker Pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)
 * [Circuit Breakers, Discovery, and API Gateways in Microservices](https://arxiv.org/pdf/1609.05830.pdf)
-* [Architectural Patterns: Uncover essential patterns in the most indispensable realm of enterprise architecture - Page 327](https://www.packtpub.com/gb/application-development/architectural-patterns)
+* [Architectural Patterns: Uncover essential patterns in the most indispensable realm of enterprise architecture - Page 327 - 329](https://www.packtpub.com/gb/application-development/architectural-patterns)
 * [Hands-On RESTful API Design Patterns and Best Practices - Page 118-122](https://www.packtpub.com/application-development/hands-restful-api-design-patterns-and-best-practices)
