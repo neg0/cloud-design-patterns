@@ -1,0 +1,15 @@
+version: "3"
+services:
+  node:
+    image: node:13.10-alpine
+    container_name: cloud_design_patterns_node
+    restart: on-failure
+    volumes:
+      - ../:/var/project/cloud-design-patterns
+    working_dir: /var/project/cloud-design-patterns
+    networks:
+      cloud_design_patterns_node_net
+
+networks:
+  cloud_design_patterns_node_net:
+    driver: bridge
