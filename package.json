@@ -1,20 +1,24 @@
 {
   "name": "cloud-design-patterns",
   "version": "1.0.0",
-  "description": "Cloud Design Patterns using Node and TypeScript",
+  "description": "Cloud Design Patterns for Availability and Resilience using Node and TypeScript (SRE Focus)",
   "repository": {
     "type": "git",
     "url": "https://github.com/neg0/cloud-design-patterns.git"
   },
   "main": "src/app.ts",
   "scripts": {
-    "test": "jest",
-    "build": "tsc /dist"
+    "test": "jest"
   },
-  "author": "Hadi Tajallaei",
+  "author": "Hadi Tajallaei <hadi@syniol.com>",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.11.0",
+    "jest": "^25.1.0",
     "prettier": "^2.0.2",
+    "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   }
 }

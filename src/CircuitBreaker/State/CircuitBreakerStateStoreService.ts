@@ -3,32 +3,36 @@ import { CircuitBreakerState } from './CircuitBreakerState'
 
 export default class CircuitBreakerStateStoreService
     implements CircuitBreakerStateStore {
-    public State: CircuitBreakerState
+    public state: CircuitBreakerState
 
-    public LastError: Error
+    public lastError: Error
 
-    public LastChangedDateUtc: Date
+    public lastChangedDateUtc: Date
+
+    public constructor() {
+        this.state = CircuitBreakerState.Closed
+    }
 
     public CircuitBreakerStateStore(): void {
         //set the default state of the circuit breaker state store
-        this.State = CircuitBreakerState.Closed
+        this.state = CircuitBreakerState.Closed
     }
 
-    get IsClosed(): boolean {
-        return this.State === CircuitBreakerState.Closed
+    get isClosed(): boolean {
+        return this.state === CircuitBreakerState.Closed
     }
 
-    public HalfOpen(): void {
-        this.State = CircuitBreakerState.HalfOpen
+    public halfOpen(): void {
+        this.state = CircuitBreakerState.HalfOpen
     }
 
-    public Reset(): void {
-        this.State = CircuitBreakerState.Closed
+    public reset(): void {
+        this.state = CircuitBreakerState.Closed
     }
 
-    public Trip(err: Error): void {
-        this.State = CircuitBreakerState.Open
-        this.LastError = err
-        this.LastChangedDateUtc = new Date()
+    public trip(err: Error): void {
+        this.state = CircuitBreakerState.Open
+        this.lastError = err
+        this.lastChangedDateUtc = new Date()
     }
 }

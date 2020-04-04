@@ -1,11 +1,11 @@
 import { CircuitBreakerState } from './CircuitBreakerState'
 
 export default interface CircuitBreakerStateStore {
-    State: CircuitBreakerState
-    LastError: Error
-    IsClosed: boolean
-    LastChangedDateUtc: Date
-    Trip(err: Error): void
-    Reset(): void
-    HalfOpen(): void
+    state: CircuitBreakerState
+    lastError: Error
+    isClosed: boolean
+    lastChangedDateUtc: Date
+    trip(err: Error): void
+    reset(): void
+    halfOpen(): void
 }
